@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="findBall" xml:space="preserve">
+    <value>Pon la bola en la estación de recarga</value>
+    <comment>Prendi la palla e mettila nella stazione di ricarica</comment>
+  </data>
+  <data name="text1" xml:space="preserve">
+    <value>Rota la bola para disparle a una estrella</value>
+    <comment>Ruota la pallina per sparare ad una stella</comment>
+  </data>
+  <data name="text10" xml:space="preserve">
+    <value>¡Muy bien! Puntaje anterior: </value>
+    <comment>Bravo! punteggio precedente:</comment>
+  </data>
+  <data name="text11" xml:space="preserve">
+    <value> puntaje anterior: </value>
+    <comment>Puoi fare di meglio! punteggio precedente:</comment>
+  </data>
+  <data name="text12" xml:space="preserve">
+    <value>Pelota no encontrada</value>
+    <comment>Pallina non trovata</comment>
+  </data>
+  <data name="text13" xml:space="preserve">
+    <value>¡Muy bien! Has totalizado </value>
+    <comment>Fine! hai totalizzato</comment>
+  </data>
+  <data name="text14" xml:space="preserve">
+    <value> puntos. Puntaje anterior: </value>
+    <comment>punti Punteggio precedente:</comment>
+  </data>
+  <data name="text15" xml:space="preserve">
+    <value>¡Muy bien!  Gracias por haber jugado</value>
+    <comment>Bravo! \n \n Grazie per aver giocato.</comment>
+  </data>
+  <data name="text16" xml:space="preserve">
+    <value>  Gracias por haber jugado.</value>
+    <comment>Puoi fare meglio! \n \n Grazie per aver giocato.</comment>
+  </data>
+  <data name="text17" xml:space="preserve">
+    <value>Puntos: </value>
+    <comment>Punti:</comment>
+  </data>
+  <data name="text18" xml:space="preserve">
+    <value>Has obtenido 10 puntos de bonus</value>
+    <comment>Hai ottenuto 10 punti bonus</comment>
+  </data>
+  <data name="text19" xml:space="preserve">
+    <value>Has obtenido 50 puntos de bonus</value>
+    <comment>Hai ottenuto 50 punti bonus</comment>
+  </data>
+  <data name="text2" xml:space="preserve">
+    <value>Cuando estés listo, presiona la pelota levemente</value>
+    <comment>Quando sei pronto premi leggermente la pallina</comment>
+  </data>
+  <data name="text20" xml:space="preserve">
+    <value>Has obtenido 20 puntos de bonus</value>
+    <comment>Hai ottenuto 20 punti bonus</comment>
+  </data>
+  <data name="text21" xml:space="preserve">
+    <value>Has obtenido 30 puntos de bonus</value>
+    <comment>Hai ottenuto 30 punti bonus</comment>
+  </data>
+  <data name="text22" xml:space="preserve">
+    <value>Has obtenido 40 puntos de bonus</value>
+    <comment>Hai ottenuto 40 punti bonus</comment>
+  </data>
+  <data name="text23" xml:space="preserve">
+    <value> segundos para el próximo lanzamiento</value>
+    <comment>secondi al prossimo lancio</comment>
+  </data>
+  <data name="text24" xml:space="preserve">
+    <value>Dispara a una estrella</value>
+    <comment>Colpisci una stella</comment>
+  </data>
+  <data name="text25" xml:space="preserve">
+    <value>Recoge todas las estrellas posibles</value>
+    <comment>Colleziona più stelle possibili</comment>
+  </data>
+  <data name="text26" xml:space="preserve">
+    <value>ya!</value>
+    <comment>via</comment>
+  </data>
+  <data name="text27" xml:space="preserve">
+    <value>Preparado</value>
+    <comment>partenza</comment>
+  </data>
+  <data name="text28" xml:space="preserve">
+    <value>Listo</value>
+    <comment>pronti</comment>
+  </data>
+  <data name="text29" xml:space="preserve">
+    <value>PRESIONA</value>
+    <comment>PREMI</comment>
+  </data>
+  <data name="text3" xml:space="preserve">
+    <value>Ahora presiona tan fuerte como puedas hasta el final del juego</value>
+    <comment>Ora premi più forte che puoi fino a fine gioco</comment>
+  </data>
+  <data name="text30" xml:space="preserve">
+    <value>ALTO</value>
+    <comment>STOP</comment>
+  </data>
+  <data name="text31" xml:space="preserve">
+    <value>¡MUY BIEN!</value>
+    <comment>MOLTO BENE!</comment>
+  </data>
+  <data name="text32" xml:space="preserve">
+    <value>Poner la bola a cargar</value>
+    <comment>metti la pallina in carica</comment>
+  </data>
+  <data name="text33" xml:space="preserve">
+    <value>Bola descargada</value>
+    <comment>Palla scarica</comment>
+  </data>
+  <data name="text4" xml:space="preserve">
+    <value>Cuando estés listo, comienza a mantener tu agarre</value>
+    <comment>Quando ti senti pronto inizia a mantenere la presa</comment>
+  </data>
+  <data name="text5" xml:space="preserve">
+    <value>En "ya!", presiona tan fuerte como puedas por tres segundos</value>
+    <comment>Al VIA premi più forte che puoi per tre secondi</comment>
+  </data>
+  <data name="text6" xml:space="preserve">
+    <value>Cuando estés listo, presiona la bola levemente</value>
+    <comment>Quando sei pronto premi leggeremente la pallina</comment>
+  </data>
+  <data name="text7" xml:space="preserve">
+    <value>¡Muy bien!  Gracias por haber jugado! Puntos totalizados </value>
+    <comment>Fine! Grazie per aver giocato! Punti totalizzati</comment>
+  </data>
+  <data name="text8" xml:space="preserve">
+    <value>Fin del juego, no has seguido las instrucciones correctamente</value>
+    <comment>Fine gioco,  non hai eseguito le istruzioni correttamente</comment>
+  </data>
+  <data name="text9" xml:space="preserve">
+    <value>No</value>
+    <comment>No</comment>
+  </data>
+</root>
