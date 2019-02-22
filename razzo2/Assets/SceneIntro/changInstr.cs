@@ -43,8 +43,10 @@ public class changInstr : MonoBehaviour {
     static public string text33;
 
     static public bool timeoutflag = false;
+    static public bool nuevoFlag = false;
 
-  
+
+
     void Start () {
         animatorI = GameObject.Find("Rigged Hand6").gameObject.GetComponent<Animator>();
         animatorS = GameObject.Find("shootintro").gameObject.GetComponent<Animator>();
@@ -200,6 +202,11 @@ public class changInstr : MonoBehaviour {
                 }
                 //Cristian
                 Invoke("waitime", 4);
+
+            }
+            if (nuevoFlag)
+            {
+                Invoke("waitime", 1);
             }
         }
         else

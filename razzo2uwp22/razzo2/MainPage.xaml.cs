@@ -121,6 +121,11 @@ namespace razzo2
         static StorageFile sampleFile = null;
         static StorageFile sampleFile2 = null;
 
+        /* GENERAL TIMEOUT
+         */
+        static public int generalTimeOut = 600;
+
+        static public bool nuevoFlag2 = false;
         static public int conta = 0;
 
         public MainPage()
@@ -2233,6 +2238,28 @@ namespace razzo2
                 }
                 else
                 {
+                    if (changInstr.nuevoFlag && !nuevoFlag2)
+                    {
+                        nuevoFlag2 = true;
+                        using (var outputStream = stream.GetOutputStreamAt(lastPosition))//stream.GetOutputStreamAt(0))
+                        {
+                            using (var dataWriter = new Windows.Storage.Streams.DataWriter(outputStream))
+                            {
+                                dataWriter.WriteString(
+                                    toDay.Day.ToString() + "/" +
+                                    toDay.Month.ToString() + "/" +
+                                    toDay.Year.ToString() + "-" +
+                                    toDay.Hour.ToString() + ":" +
+                                    toDay.Minute.ToString() + ":" +
+                                    toDay.Second.ToString() + "\t - " +
+                                    "Error: Timeout" +
+                                    Environment.NewLine);
+                                await dataWriter.StoreAsync();
+                                await outputStream.FlushAsync();
+                            }
+                        }
+                        stream.Dispose();
+                    }
                     if (changInstr.timeoutflag)
                     {
                         using (var outputStream = stream.GetOutputStreamAt(lastPosition))//stream.GetOutputStreamAt(0))
@@ -2372,6 +2399,14 @@ namespace razzo2
                 //Debug.WriteLine("dispatcherTimer.IsEnabled = " + dispatcherTimer.IsEnabled + "\n");
                 //span = stopTime - startTime;
                 //Debug.WriteLine("Total Time Start-Stop: " + span.ToString() + "\n");
+            }
+            if (timesTicked >= generalTimeOut)
+            {
+                StopBleDeviceWatcher();
+                changInstr.timeoutflag = false;
+                pointver2.devicenotfound = false;
+                changInstr.nuevoFlag = true;
+                SaveLogFile(true);
             }
         }
 
